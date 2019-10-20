@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:500&display=swap');
+
+.wrapper {
+    width: 1002px;
+    margin: auto;
+    background-color: #E5E5E5;
+
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+
+    grid-template-areas:
+        "top_block"
+        "menu"
+        "blocks"
+        "how_it_works"
+        "up"
+        "contact"
+        "footer";
+}
+
+/* Style for text */
+p {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Frank Ruhl Libre';
+    font-style: normal;
+    letter-spacing: -0.02em;
+    line-height: 100%;
+}
+
+/* Style for button */
+button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+    text-align: center;
+
+    width: 131px;
+    height: 39px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+  
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* Tob block */
+.top_block {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "covered learn"
+    "covered join";
+
+    width: 1002px;
+    height: 544px;
+}
+
+/* Block Covered */
+.covered {
+    grid-area: covered;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#C7DDEA;
+
+    position: relative;
+}
+
+h1 {
+    width: 314px;
+    height: 140px;
+
+    margin: 60px;
+
+    font-size: 45px;
+    color: #000000;
+}
+
+.covered p {
+    display: flex;
+    flex-direction: column;
+
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.6);
+
+    width: 268px;
+    height: 103px;
+
+    margin: -80px;
+    transform: translateX(-15px);
+}
+
+span {
+    color: #FFFFFF;
+}
+
+.covered img {
+    position: absolute;
+    bottom:0;
+    right: 0;
+    height: 55%;
+    width: 65%;
+}
+
+.covered button {
+    margin: 120px;
+    transform: translateX(-80px);
+}
+
+/* Block Learn */
+.learn {
+    grid-area: learn;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 501px;
+    height: 272px;
+
+    background: #F17949;
+}
+
+.top_block h2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    transform: translateY(-30px);
+
+    font-size: 32px;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+
+/* Block Join */
+.join {
+    grid-area: join;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 501px;
+    height: 272px;
+
+    background: #FAB131;
+}
+
+.learn p, .join p {
+    text-align: center;
+
+    width: 268px;
+    height: 103px;
+
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -0.02em;
+    color: rgba(0, 0, 0, 0.5);
+
+    transform: translateY(90px);
+}
+
+/* Menu */
+menu {
+    grid-area: menu;
+    display: grid;
+
+    background: #E5E5E5;
+}
+
+.links {
+    display: flex;
+    text-align: center;
+
+    list-style: none;
+    margin: 0;
+    padding: 10px 250px 0;
+}
+
+.links li {
+    display: flex;
+    align-items: center;
+
+    width: 167px;
+    height: 57px;
+}
+
+li a {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    color: #000000;
+
+    opacity: 0.4;
+}
+
+li:first-child a {
+    opacity: 1;
+}
+
+/* Block Professional */
+.block_professional {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-items: center;
+    background: #A9A19E;
+
+    width: 1002px;
+    height: 579px;
+}
+
+.block_professional h3 {
+    display: flex;
+    align-self: flex-start;
+    
+    margin: 107px;
+    color: #FFFFFF;
+
+    width: 314px;
+    height: 140px;
+    font-size: 45px;
+}
+
+.block_professional p {
+    display: flex;
+    align-self: flex-end;
+
+    width: 280px;
+    height: 237px;
+   
+    margin: 107px;
+
+    transform: translateY(-350px);
+
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.block_professional button {
+    margin: -520px;
+    transform: translateX(-330px);
+}
+
+/* Block with cards */
+.cards {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+
+    padding-left: 90px;
+    position: absolute;
+    bottom: -450px;
+}
+
+.card-1, .card-2, .card-3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    width: 256px;
+    height: 308px;
+    background-color: white;
+
+    margin: 1%; 
+    padding: 10px;  
+}
+
+.img-child, .img-adult, .img-old {
+    width: 236px;
+    height: 150px;
+
+    margin: -300px auto;
+
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.img-child {
+    background-color: #C7DDEA;
+}   
+
+.img-adult {
+    background: #FAB131; 
+}
+
+.img-old {
+    background: #F17949;  
+}
+
+img {
+    display: block;
+    width: auto;
+    height: 150px;
+}
+
+h4 {
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    flex-direction: column;
+
+    width: 198px;
+    height: 13px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 5px;
+
+    transform: translateY(100px);
+}
+
+.cards p {
+    width: 214px;
+    height: 108px;
+    font-size: 11px;
+    line-height: 22px;
+
+    margin-top: 50px;
+    padding: 10px;
+
+    transform: translateY(40px);
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* Block About */
+.block_about {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+
+    width: 1002px;
+    height: 650px;
+
+    background: #FAB131;
+}
+
+.block_about h3 {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    color: #FFFFFF;
+    font-size: 45px;
+    
+    margin: 120px;
+    transform: translateY(105px);
+}
+
+.block_about p {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+
+    width: 442px;
+    height: 280px;  
+    line-height: 20px;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* section "How it works?" */
+.how_it_works {
+    grid-area: how_it_works;
+   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 334px;
+    align-content: space-around;
+
+    width: 1002px;
+}
+
+.how_it_works div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+}
+
+.item-1 {
+    background-color: #C7DDEA;    
+}
+.item-2, .item-4, .item-6 {
+    background-color: #FFFFFF;   
+}
+.item-3 {
+    background-color: #EBEBEB;   
+}
+.item-5 {
+    background-color: #F17949;
+}
+
+.how_it_works p {
+    display: flex;
+    text-align: center;
+
+    font-size: 17px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+h5 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    font-size: 45px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+h6 {
+    position: absolute;
+    
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    margin: 30px;
+
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 35px;
+}
+
+/* Block Up */
+.up {
+    grid-area: up;
+    
+    display: flex;
+    justify-content: center;  
+    text-align: center;
+    background: #A9A19E;
+
+    width: 1002px;
+    height: 68px;
+}
+
+.fas {
+    padding: 15px 0px 5px 0px;
+}
+
+.vector p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    font-size: 17px;
+    line-height: 20px;
+
+    color: rgba(0, 0, 0, 0.6);
+    
+    transform: translateY(-20px);
+}
+
+/* Footer */
+footer {
+    grid-area: footer;
+
+    width: 1002px;
+    height: 340px;
+    background: #777574;
+}
+
+/* Style for page Cotact */
+.contact {
+    grid-area: contact;
+   
+    width: 1002px;
+    height: auto;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+
+    grid-template-areas:
+        "adress phone" 
+        "hours email";
+
+    margin: 20px; 
+}
+
+.adress {
+    grid-area: adress;
+}
+.phone {
+    grid-area: phone;
+}
+.email {
+    grid-area: email;
+}
+.hours {
+    grid-area: hours;
+}
+
+.adress, .phone, .email, .hours {
+    place-self: center;
+}
+.info p {
+    width: 214px;
+
+    font-size: 15px;
+    letter-spacing: 0.02em;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+    /* margin: -300px auto; */
+
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.needle {
+    position: absolute;
+    height: 4%;
+    width: 2%;
+
+    margin: 200px;
+}
+
